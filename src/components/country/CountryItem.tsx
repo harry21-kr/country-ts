@@ -13,15 +13,15 @@ const fetchImage = async (url: string) => {
   }
 };
 
-interface CountryItemProps {
-  country: CountryResponse;
-}
-
 export const CountryItemSkeleton: React.FC = () => {
   return (
     <div className="w-[292px] h-[260px] flex flex-col items-center p-4 bg-gray-300 animate-pulse shadow-md rounded" />
   );
 };
+
+interface CountryItemProps {
+  country: CountryResponse;
+}
 
 const CountryItem: React.FC<CountryItemProps> = ({ country }) => {
   const { data: imageUrl } = useSuspenseQuery({
