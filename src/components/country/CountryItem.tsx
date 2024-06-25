@@ -31,7 +31,7 @@ const CountryItem: React.FC<CountryItemProps> = ({ country }) => {
   });
 
   return (
-    <li className="w-[292px] h-[260px] flex flex-col items-center p-4 shadow-md rounded">
+    <li className="w-[292px] h-[260px] flex flex-col items-center p-4 shadow-md rounded border">
       <img src={imageUrl} className="w-full max-w-[260px] h-[180px]" />
       <h2>{country.name.common}</h2>
       <h3>{country.capital}</h3>
