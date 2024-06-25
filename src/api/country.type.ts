@@ -7,4 +7,10 @@ export interface CountryResponse {
   name: {
     common: string;
   };
+  translations: {
+    kor: {
+      official: string;
+      common: string;
+    };
+  };
 }

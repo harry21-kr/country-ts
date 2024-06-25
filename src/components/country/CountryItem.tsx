@@ -31,10 +31,10 @@ const CountryItem: React.FC<CountryItemProps> = ({ country }) => {
   });
 
   return (
-    <li className="flex h-[260px] w-[292px] flex-col items-center rounded border p-4 shadow-md">
+    <li className="flex max-h-[300px] min-w-[292px] flex-col items-center gap-1 rounded border p-4 shadow-md">
       <img src={imageUrl} className="h-[180px] w-full max-w-[260px]" />
-      <h2>{country.name.common}</h2>
-      <h3>{country.capital}</h3>
+      <h2 className="text-lg font-bold">{country.translations.kor.common}</h2>
+      <h3>{country.name.common}</h3>
     </li>
   );
 };
