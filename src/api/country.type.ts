@@ -1,5 +1,5 @@
 export interface CountryResponse {
-  capital: string[];
+  capital: string;
   flags: {
     png: string;
     svg: string;
