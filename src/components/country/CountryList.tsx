@@ -9,7 +9,7 @@ const CountryList = () => {
   });
 
   return (
-    <ul className="flex flex-wrap gap-4 justify-center">
+    <ul className="flex flex-wrap justify-center gap-4">
       {countryList.map((country) => (
         <CountryItem key={country.name.common} country={country} />
       ))}

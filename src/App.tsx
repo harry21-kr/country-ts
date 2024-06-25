@@ -7,7 +7,7 @@ const App = () => {
   return (
     <main className="flex flex-col items-center">
       <Header />
-      <div className="max-w-[1224px] mt-36 flex flex-wrap gap-4 justify-center">
+      <div className="mt-36 flex max-w-[1224px] flex-wrap justify-center gap-4">
         <Suspense
           fallback={Array.from({ length: 20 }).map((_, idx) => (
             <CountryItemSkeleton key={idx} />

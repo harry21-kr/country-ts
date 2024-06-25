@@ -15,7 +15,7 @@ const fetchImage = async (url: string) => {
 
 export const CountryItemSkeleton: React.FC = () => {
   return (
-    <div className="w-[292px] h-[260px] flex flex-col items-center p-4 bg-gray-300 animate-pulse shadow-md rounded" />
+    <div className="flex h-[260px] w-[292px] animate-pulse flex-col items-center rounded bg-gray-300 p-4 shadow-md" />
   );
 };
 
@@ -31,8 +31,8 @@ const CountryItem: React.FC<CountryItemProps> = ({ country }) => {
   });
 
   return (
-    <li className="w-[292px] h-[260px] flex flex-col items-center p-4 shadow-md rounded border">
-      <img src={imageUrl} className="w-full max-w-[260px] h-[180px]" />
+    <li className="flex h-[260px] w-[292px] flex-col items-center rounded border p-4 shadow-md">
+      <img src={imageUrl} className="h-[180px] w-full max-w-[260px]" />
       <h2>{country.name.common}</h2>
       <h3>{country.capital}</h3>
     </li>
