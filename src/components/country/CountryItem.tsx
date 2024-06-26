@@ -13,12 +13,6 @@ const fetchImage = async (url: string) => {
   }
 };
 
-export const CountryItemSkeleton: React.FC = () => {
-  return (
-    <div className="flex h-[260px] w-[292px] animate-pulse flex-col items-center rounded bg-gray-300 p-4 shadow-md" />
-  );
-};
-
 interface CountryItemProps {
   country: CountryResponse;
   isSelectedCountry: boolean;
